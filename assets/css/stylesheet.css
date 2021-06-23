@@ -161,6 +161,16 @@ nav a:visited {
 .tile .description p {
     color:var(--accent-color);
 }
+
+.tile .description a {
+    text-decoration: none;
+    color:var(--primary-color);
+}
+
+.tile .description a:hover {
+    color:var(--content-color);
+    text-decoration:underline;
+}
 /* Specific stying for my first image, and general stying for the following */
 #tile-1 {
     background-image: url(../images/stock-photo-3.jpg);
