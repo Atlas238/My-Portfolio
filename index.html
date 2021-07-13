@@ -32,7 +32,7 @@
         <div class="about-me-wrapper">
         <section id="about-me">
             <div class="section-header-box">
-                <h3 class="header">About Me</h3>
+                <h3>About Me</h3>
                 <!-- Maybe use svg for bottom border to have it slide in? -->
                 <!-- <svg width="1000" height="13">
                     <rect>
@@ -40,6 +40,7 @@
                     </rect>
                 </svg> -->
             </div>
+            <div id="descDiv" class="flex-column justify-between">
             <div class="sub-header-box">
             <h4 class="sub-header">My name is Jack Bentsen and I am a full stack web developer.</h4>
             </div>
@@ -64,44 +65,62 @@
             <p class="author"> - Author</p>
         </div>
 
+        <div id="resumeLinkBox">
+            <a href="">Full Resume can be found here</a>
+        </div>
+    </div>
         </section>
         </div>  
-
-        <section id="my-work">
+        <div class="my-work-wrapper">
+        <section id="my-work" class="">
             <div class="section-two-header-box">
-            <h3 class="header-works">My Work</h3>
+            <h3>My Work</h3>
             </div>
 
-            <div class="my-work-box">
-                
-                <div class="tile" id="tile-1">
-                    <img src="assets/images/weather-dashboard-portfolio-feature.PNG" alt="Weather Dashboard App">
-                    <div class="description">
-                        <h4>Weather Dashboard</h4>
-                        <p>A dynamic weather app that loads a visitors location, displaying current weather and a seven day forecast for their city!</p>
+            <div id="card-container">
+
+                <div>
+                    <div>
+                        <div>
+                            <h4 id="dash-title">Weather Dashboard</h3>
+                            <p class="work-description">A simple weather application that pulls a visitors city and provides current weather as well as a 7 day forecast. <a href="https://atlas238.github.io/weather-dashboard/">Check it out here!</a></p>
+                            <p class="work-description"><a href="https://github.com/Atlas238/weather-dashboard">Github repo can be found here.</a></p>
+                        </div>
+                    </div>
+                    <div class="flex-row justify-center">
+                        <img src="assets/images/weather-dashboard-portfolio-feature.PNG" alt="Weather Dashboard Landing Page">
                     </div>
                 </div>
-                <div class="tile" id="tile-2">
-                    <div class="description">
-                        <h4>Day Planner</h4>
-                        <p>A time-responsive day planner to help schedule out your busy days - Cells change collor if they are in the past, present or future!</p>
+            
+                <div>
+                    <div>
+                        <div>
+                            <h4 id="day-title">Work Day Scheduler</h3>
+                            <p class="work-description">A day planner application that changes the background of time cells based on whether a cell is in the past, present or future. <a href="">Check it out here!</a></p>
+                            <p class="work-description"><a href="https://github.com/Atlas238/work-day-scheduler">Github repo can be found here.</a></p>
+                        </div>
+                    </div>
+                    <div class="flex-row justify-center">
+                        <img src="assets/images/work-day-scheduler.PNG" alt="Work Day Scheduler Landing Page">
                     </div>
                 </div>
-                <div class="tile" id="tile-3">
-                    <div class="description">
-                        <h4>Multicolor Graffiti</h4>
-                        <p>Third Application</p>
+
+                <div>
+                    <div>
+                        <div>
+                            <h4 id="cal-title">Calorie Replacer</h3>
+                            <p class="work-description">A workout-oriented application that after taking in user information, as well as a user's recent workouts, generates a total calories burned statistic that is then used to calculate how many of a given recipe a user just burnt off. <a href="https://rangamboa.github.io/training-calorie-tracker/">Check it out here!</a></p>
+                            <p class="work-description"><a href="https://github.com/rangamboa/training-calorie-tracker">Github repo can be found here.</a></p>
+                        </div>
+                    </div>
+                    <div class="flex-row justify-center">
+                        <img src="assets/images/cal-replacer.PNG" alt="Calorie Replacer Application Landing Page">
                     </div>
                 </div>
-                <div class="tile" id="tile-4">
-                    <div class="description">
-                        <h4>Vynl Collection</h4>
-                        <p>Fourth Application</p>
-                    </div>
-                </div>
-            </div>
+        </div>
 
         </section>
+    </div>
 
         <footer id="contact-me">
 
@@ -114,12 +133,14 @@
 
                 <li><a href="https://github.com/Atlas238/" target="_blank">Github</a></li>
 
-                <li><a href="#">LinkedIn</a></li>
+                <li><a href="https://www.linkedin.com/in/jack-bentsen/" target="_blank">LinkedIn</a></li>
 
             </ul>
         </footer>
     </main>
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit-icons.min.js"></script>
 <script src="js/script.js"></script>
 </html>
