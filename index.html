@@ -4,88 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/stylesheet.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    
     <title>Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>Jack Bentsen</h1>
-        <nav> 
-            <a href="#about-me">About Me</a>
-            <a href="#my-work">My Work</a>
-            <a href="#contact-me">Contact Me</a>
-        </nav>
-
+        <div id="hi">
+            <h1>Hi there!</h1>
+        </div>
+        <div id="welcome">
+            <h2>Welcome to my portfolio - I hope you like what you see!</h2>
+        </div>
+        <div class="center">
+            <h1>Jack Bentsen</h1>
+    
+            <nav> 
+                <a href="#about-me">About Me</a>
+                <a href="#my-work">My Work</a>
+                <a href="#contact-me">Contact Me</a>
+            </nav>
+        </div>
     </header>
-<!-- Most of the main page content is contained here, with specific boxes for the three sections that follow -->
     <main>
+        <div class="about-me-wrapper">
         <section id="about-me">
-            <h3>About Me</h3>
-            <div class="me-description">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum distinctio accusantium voluptas volupta odio delectus quae quas non praesentium quos! Aliquid iste mollitia voluptatibus laborum cum ducimus quas maxime fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum provident, expedita illo quasi ab quod dicta deleniti dolorum maiores ex porro natus, facere fuga soluta molestiae quia at et impedit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam qui velit consequuntur quae facilis natus libero distinctio! Nobis eum magni illum, qui quas ullam cupiditate, tempora nisi iste, ex laboriosam?</p>
+            <div class="section-header-box">
+                <h3>About Me</h3>
+                <!-- Maybe use svg for bottom border to have it slide in? -->
+                <!-- <svg width="1000" height="13">
+                    <rect>
+
+                    </rect>
+                </svg> -->
+            </div>
+            <div id="descDiv" class="flex-column justify-between">
+            <div class="sub-header-box">
+            <h4 class="sub-header">My name is Jack Bentsen and I am a full stack web developer.</h4>
+            </div>
+            <div class="flex-row">
+
+
+                <div class="me-description">
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum distinctio accusantium voluptas voluptatibus odio delectus quae quas non praesentium quos! Aliquid iste mollitia voluptatibus laborum cum ducimus quas maxime fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum provident, expedita illo quasi ab quod dicta deleniti dolorum maiores ex porro natus, facere fuga soluta molestiae quia at et impedit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam qui velit consequuntur quae facilis natus libero distinctio! Nobis eum magni illum, qui quas ullam cupiditate, tempora nisi iste, ex laboriosam?</p>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum distinctio accusantium voluptas voluptatibus odio delectus quae quas non praesentium quos! Aliquid iste mollitia voluptatibus laborum cum ducimus quas maxime fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum provident, expedita illo quasi ab quod dicta deleniti dolorum maiores ex porro natus, facere fuga soluta molestiae quia at et impedit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam qui velit consequuntur quae facilis natus libero distinctio! Nobis eum magni illum, qui quas ullam cupiditate, tempora nisi iste, ex laboriosam?</p>
+                </div>
+
+            <div class="img-holder">
+                <!-- <img id="me-png" src="assets/images/me.jpeg" alt="profile picture"/> -->
+            </div>
+            
         </div>
 
-            <img src="assets/images/profile-picture.jpg" alt="profile picture"/>
+        <div class="quote-wrapper">
+            <p class="quote">QUOTE GOES HERE WITH BEFORE AND AFTER QUOTATIONS TO LOOK FANCY</p>
+            <p class="author"> - Author</p>
+        </div>
 
+        <div id="resumeLinkBox">
+            <a href="">Full Resume can be found here</a>
+        </div>
+    </div>
         </section>
-
-        <section id="my-work">
-
+        </div>  
+        <div class="my-work-wrapper">
+        <section id="my-work" class="">
+            <div class="section-two-header-box">
             <h3>My Work</h3>
-<!-- This box contains the different tiles so that I can utilize flexwrap-wrap to get things to scale dynamically -->
-            <div class="my-work-box">
-                
-                <div class="tile" id="tile-1">
-                    <div class="description">
-                        <h4>Desert Sands</h4>
-                        <p><a href="#">Premiere Application</a></p>
-                    </div>
-                </div>
-                <div class="tile" id="tile-2">
-                    <div class="description">
-                        <h4>Woodland Dog</h4>
-                        <p><a href="#">Second Application</a></p>
-                    </div>
-                </div>
-                <div class="tile" id="tile-3">
-                    <div class="description">
-                        <h4>Multicolor Graffiti</h4>
-                        <p><a href="#">Third Application</a></p>
-                    </div>
-                </div>
-                <div class="tile" id="tile-4">
-                    <div class="description">
-                        <h4>Vynl Collection</h4>
-                        <p><a href="#">Fourth Application</a></p>
-                    </div>
-                </div>
-                <div class="tile" id="tile-5">
-                    <div class="description">
-                        <h4>Open Field</h4>
-                        <p><a href="#">Fifth Application</a></p>
-                    </div>
-                </div>
             </div>
 
+            <div id="card-container">
+
+                <div>
+                    <div>
+                        <div>
+                            <h4 id="dash-title">Weather Dashboard</h3>
+                            <p class="work-description">A simple weather application that pulls a visitors city and provides current weather as well as a 7 day forecast. <a href="https://atlas238.github.io/weather-dashboard/">Check it out here!</a></p>
+                            <p class="work-description"><a href="https://github.com/Atlas238/weather-dashboard">Github repo can be found here.</a></p>
+                        </div>
+                    </div>
+                    <div class="flex-row justify-center">
+                        <img src="assets/images/weather-dashboard-portfolio-feature.PNG" alt="Weather Dashboard Landing Page">
+                    </div>
+                </div>
+            
+                <div>
+                    <div>
+                        <div>
+                            <h4 id="day-title">Work Day Scheduler</h3>
+                            <p class="work-description">A day planner application that changes the background of time cells based on whether a cell is in the past, present or future. <a href="">Check it out here!</a></p>
+                            <p class="work-description"><a href="https://github.com/Atlas238/work-day-scheduler">Github repo can be found here.</a></p>
+                        </div>
+                    </div>
+                    <div class="flex-row justify-center">
+                        <img src="assets/images/work-day-scheduler.PNG" alt="Work Day Scheduler Landing Page">
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div>
+                            <h4 id="cal-title">Calorie Replacer</h3>
+                            <p class="work-description">A workout-oriented application that after taking in user information, as well as a user's recent workouts, generates a total calories burned statistic that is then used to calculate how many of a given recipe a user just burnt off. <a href="https://rangamboa.github.io/training-calorie-tracker/">Check it out here!</a></p>
+                            <p class="work-description"><a href="https://github.com/rangamboa/training-calorie-tracker">Github repo can be found here.</a></p>
+                        </div>
+                    </div>
+                    <div class="flex-row justify-center">
+                        <img src="assets/images/cal-replacer.PNG" alt="Calorie Replacer Application Landing Page">
+                    </div>
+                </div>
+        </div>
+
         </section>
+    </div>
 
         <footer id="contact-me">
 <!-- Small container for the contact links -->
             <h3>Contact Me</h3>
 
-            <ul class="contact-items">
+            <ul class="contact-items flex-row">
                 <li>425-753-0498</li>
 
                 <li><a href="mailto:jack@bentsen.us" target="_blank">Email</a></li>
 
                 <li><a href="https://github.com/Atlas238/" target="_blank">Github</a></li>
 
-                <li><a href="https://www.linkedin.com/in/jack-bentsen/">LinkedIn</a></li>
+                <li><a href="https://www.linkedin.com/in/jack-bentsen/" target="_blank">LinkedIn</a></li>
 
             </ul>
         </footer>
     </main>
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.0/dist/js/uikit-icons.min.js"></script>
+<script src="js/script.js"></script>
 </html>
