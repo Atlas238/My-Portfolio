@@ -434,6 +434,22 @@ transition: opacity 500ms ease-in-out;
         font-size: 2rem !important;
     }
 
+    #day-title {
+        font-size: 2rem !important;
+    }
+
+    #cal-title {
+        font-size: 2rem !important;
+    }
+
+    .work-description {
+        font-size: 1rem !important;
+    }
+
+    .work-description a {
+        text-decoration: underline;
+    }
+    
     #contact-me {
         display:flex;
         flex-direction: column;
