@@ -6,6 +6,7 @@ Updated original portfolio page with new projects as well as updated styling to 
 - Change project showcase to slideshow with descriptions and links appearing on focus/click
 - Speed up animations overall
 - Replace current project features with future projects that better reflect change in overall development skills
+- Replace placeholder text in about me and Quote (Still editing)
 
 ### Link
 - Github [Repo](https://github.com/Atlas238/)
