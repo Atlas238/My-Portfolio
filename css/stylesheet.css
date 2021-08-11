@@ -225,10 +225,11 @@ header nav a:hover {
 
 .quote-wrapper {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 
 .quote {
+    padding: 10rem;
     font-size: 2.5rem;
 }
 
@@ -346,7 +347,7 @@ transition: opacity 500ms ease-in-out;
 }
 
 .fadeIn-animation {
-    animation: fadeIn 3s ease-in-out forwards;
+    animation: fadeIn 2.5s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -413,12 +414,16 @@ transition: opacity 500ms ease-in-out;
         margin: 0 auto;
     }
 
+    .quote {
+        padding: 1rem;
+    }
+
     .quote-wrapper .quote {
         font-size:1.4rem;
     }
 
     .quote-wrapper .author {
-        font-size:1rem;
+        font-size:1.3rem;
     }
 
     #my-work .section-two-header-box > h3 {
