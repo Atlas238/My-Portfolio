@@ -19,6 +19,13 @@
     margin: 1rem;
 }
 
-.resumeLink span {
+.resumeLink a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: all 150ms ease-in-out;
+}
+
+.resumeLink a:hover {
+    color: grey;
     text-decoration: underline;
 }

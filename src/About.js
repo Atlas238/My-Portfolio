@@ -1,4 +1,5 @@
 import React from 'react';
+import resume from './assets/pdf/BentsenJackResume.pdf';
 import './css/aboutStyle.css';
 
 export default function About() {
@@ -13,7 +14,7 @@ export default function About() {
             </div>
             <hr/>
             <div className="resumeLink">
-              <a href="#">My full resume can be downloaded <span>here</span>!</a>
+              <a download="BentsenJack-Resume" href={resume} target="_blank">My full resume can be downloaded here!</a>
             </div>
         </div>
     )

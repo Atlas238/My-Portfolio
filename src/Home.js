@@ -43,7 +43,7 @@ export default function Home() {
             <div className="welcomeContainer">
                 <div className="avatarContainer">
                     <img src={avatar} alt="Jack Ryan Bentsen"></img>
-                    <h2>Hi! My name is Jack Ryan Bentsen and I am a Full Stack Web Developer</h2>
+                    <h2>Hi! My name is Jack Ryan Bentsen and I am a Full Stack Web Developer!</h2>
                 </div>
             </div>
             <hr/>
