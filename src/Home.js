@@ -46,7 +46,7 @@ export default function Home() {
                     <h2>Hi! My name is Jack Ryan Bentsen and I am a Full Stack Web Developer</h2>
                 </div>
             </div>
-
+            <hr/>
             <h4 style={{
                 textAlign: 'center',
                 margin: '1rem',
@@ -68,7 +68,10 @@ export default function Home() {
                 { textAlign: 'center',
                   padding: 10 }
             }>
-              <a href="https://icons8.com/">Icons from Icons8</a>
+              <a href="https://icons8.com/" style={{
+                  textDecoration: 'none',
+                  color:'white',
+              }}>Icons from Icons8</a>
             </div>
 
         </div>

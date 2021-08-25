@@ -38,7 +38,7 @@ export default function Work() {
         <div className="myWorkSection">
 
             <h2>My Work</h2>
-
+            <hr/>
             <div className="workContainer">
                 {
                     projects.map((project) => {
