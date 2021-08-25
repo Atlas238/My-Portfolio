@@ -4,7 +4,7 @@
 }
 
 .myWorkSection h2 {
-    font-size: 2rem;
+    font-size: 4rem;
     padding: 1rem;
 }
 
@@ -34,12 +34,13 @@
 
 .cardHeader h4 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
 .cardBody {
     width:100%;
+    font-size: 1.2rem;
     background-color: aliceblue;
     border-right: 2px outset grey;
     border-left: 2px outset grey;
@@ -47,11 +48,11 @@
 
 .cardBody p {
     text-align: center;
+    padding: 0.5rem;
 }
 
 .cardBody img {
     max-width: 100%;
-    min-height: 300px;
 }
 
 .cardLinks {

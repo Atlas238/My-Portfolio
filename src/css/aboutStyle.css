@@ -7,7 +7,7 @@
     margin-top: 2rem;
 }
 
-.aboutMeText {
+.aboutMeText p {
     font-size: larger;
     margin: 1rem;
 }
@@ -15,6 +15,7 @@
 .resumeLink {
     display: flex;
     justify-content: center;
+    margin: 1rem;
 }
 
 .resumeLink span {
