@@ -12,12 +12,17 @@
     box-shadow: 5px 5px 5px 5px rgb(37, 37, 37);
 }
 
+.navbar h1 {
+    font-size: 3rem;
+}
+
 .navbar-tabs {
     display: flex;
     list-style-type: none;
 }
 
 .navbar-item a {
+    font-size: 1.3rem;
     color: white;
     padding: 0.8rem;
     text-decoration: none;

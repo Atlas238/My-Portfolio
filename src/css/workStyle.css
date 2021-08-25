@@ -71,13 +71,14 @@
     text-align: center;
     list-style-type: none;
     border: 1px solid black;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 .cardLink a {
     color: black;
     padding: 0.3rem;
     text-decoration: none;
+    transition: all 150ms ease-in-out;
 }
 
 .cardLink:hover a {
@@ -86,5 +87,5 @@
 
 .cardLink:hover {
     border: 1px solid silver;
-    border-radius: 2px;
+    border-radius: 5px;
 }

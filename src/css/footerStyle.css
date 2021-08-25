@@ -1,5 +1,4 @@
 .footerSection {
-    width:100%;
     text-align: center;
     background-color: #224760;
     padding: 1rem;
@@ -10,7 +9,6 @@
     color: whitesmoke;
     text-decoration: none;
     font-size: 1.5rem;
-    margin: 1rem;
     transition: color 100ms ease-in-out;
 }
 
