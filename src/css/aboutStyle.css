@@ -1,0 +1,22 @@
+.aboutMeBox {
+    min-height: fit-content;
+    margin: 0 2rem;
+}
+
+.aboutMeHeader {
+    margin-top: 2rem;
+}
+
+.aboutMeText {
+    font-size: larger;
+    margin: 1rem;
+}
+
+.resumeLink {
+    display: flex;
+    justify-content: center;
+}
+
+.resumeLink span {
+    text-decoration: underline;
+}

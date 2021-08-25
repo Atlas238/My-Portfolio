@@ -1,0 +1,42 @@
+.homeContainer {
+    min-height: 100vh;
+}
+
+.welcomeContainer {
+    min-height: 50vh;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatarContainer img {
+    width: 15vw;
+}
+
+.techCardContainer {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.knownTechCard {
+    background-color: aliceblue;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+}
+
+.knownTechIcon {
+    padding: 5px;
+    height: 75%;
+}
