@@ -54,9 +54,13 @@ export default function Work() {
                               <ul className="cardLinks">
                                 <li className="cardLink"><a 
                                     href={project.repo}
+                                    target="_blank"
+                                    rel="noreferrer"
                                     >Visit Repository</a></li>
                                 <li className="cardLink"><a 
                                     href={project.deploy}
+                                    target="_blank"
+                                    rel="noreferrer"
                                     >Visit Deployment</a></li>
                               </ul>
                           </div>

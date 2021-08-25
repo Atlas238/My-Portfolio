@@ -14,7 +14,7 @@ export default function About() {
             </div>
             <hr/>
             <div className="resumeLink">
-              <a download="BentsenJack-Resume" href={resume} target="_blank">My full resume can be downloaded here!</a>
+              <a download="BentsenJack-Resume" href={resume} target="_blank" rel="noreferrer">My full resume can be downloaded here!</a>
             </div>
         </div>
     )
