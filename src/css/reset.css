@@ -2,3 +2,14 @@
     margin:0;
     padding:0;
 }
+
+html {
+    background-color: #2b2a31;
+    color: rgb(255, 253, 250);
+    overflow-x: hidden;
+}
+
+.active {
+    font-weight: 900;
+    color: grey;
+}
