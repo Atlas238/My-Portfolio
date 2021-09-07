@@ -1,43 +1,32 @@
-import React, {useState} from 'react';
-import Navbar from './Navbar.js';
-import Home from './Home.js';
-import About from './About.js';
-import Work from './Work.js';
-import Contact from './Contact.js';
-import Footer from './Footer.js';
-import './css/reset.css'
+import React, { useState } from "react";
+import HeaderNav from "./components/HeaderNav";
+
+import "./assets/css/style.css";
+
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
+
+import Me from "./components/fragments/Me";
+import Greeting from "./components/Greeting";
+import ThemeToggle from "./components/fragments/ThemeToggle";
+
+library.add(fab, fas, faCheckSquare, faCoffee);
 
 function App() {
-    
-    const [currentPage, setCurrentPage] = useState('Home');
+  const [theme, setTheme] = useState("dark");
 
-    const renderPage = () => {
-        if (currentPage === 'Home') {
-            return <Home />;
-        }
-        if (currentPage === 'About') {
-            return <About />;
-        }
-        if (currentPage === 'Work') {
-            return <Work />;
-        }
-        if (currentPage === 'Contact') {
-            return <Contact />;
-        }
-    };
-
-    const handlePageChange = (page) => setCurrentPage(page);
-
-    return (
-        <div>
-            <head>
-                <script src="https://kit.fontawesome.com/812ecae711.js" crossorigin="anonymous"></script>
-            </head>
-            <Navbar currentPage={currentPage} handlePageChange={handlePageChange}/>
-            {renderPage()}
-            <Footer currentPage={currentPage} handlePageChange={handlePageChange}/>
-        </div>
-    )
+  return (
+    <section>
+      <HeaderNav theme={theme} />
+      <div className={`main ${theme}`}>
+        <Greeting theme={theme} />
+        <Me />
+        <ThemeToggle theme={theme} setTheme={setTheme} />
+      </div>
+    </section>
+  );
 }
 
 export default App;

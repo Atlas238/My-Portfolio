@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 150ms ease;
+}
+:root {
+  --c-primary: rgba(255, 255, 255, 0.836);
+  --c-background-light: rgb(107, 155, 245);
+  --c-background-dark: rgb(33, 53, 92);
+  --t-dark: rgb(226, 249, 250);
+  --t-light: rgb(4, 14, 44);
+  --p-main: rgb(197, 223, 247);
+  --p-main-dark: rgb(6, 40, 71);
+}
+
+html {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(102, 150, 240);
+  color: rgba(255, 255, 255, 0.836);
+  font-family: "Courier New", Courier, monospace;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  height: 100vh;
+}
+
+.main.light {
+  display: flex;
+  height: 25vh;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--p-main);
+}
+
+.main.dark {
+  display: flex;
+  height: 25vh;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--p-main-dark);
+}
+
+.navbar.light {
+  display: flex;
+  padding: 1rem;
+  /* Horizontal Center */
+  align-items: center;
+  background-color: var(--c-background-light);
+}
+.navbar.dark {
+  display: flex;
+  padding: 1rem;
+  /* Horizontal Center */
+  align-items: center;
+  background-color: var(--c-background-dark);
+}
+
+.navbar .brand {
+  display: flex;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  height: fit-content;
+  background-color: rgba(47, 184, 226, 0.651);
+  border-radius: 65% 30%;
+}
+
+.avatar .links ul li a {
+  color: var(--c-primary);
+  font-size: 1.5rem;
+  transition: color 150ms ease !important;
+}
+
+.avatar .links ul li a:hover {
+  color: rgb(71, 117, 202);
+}
+
+.greeting.light {
+  width: 50%;
+  text-align: center;
+  color: var(--t-light);
+}
+.greeting.dark {
+  width: 50%;
+  text-align: center;
+  color: var(--t-dark);
+}
+
+.themeIcons {
+  position: relative;
+  transition-delay: 500ms;
+}
+
+.sun {
+  position: relative;
+  font-size: 2rem;
+  color: rgba(243, 240, 45, 0.918);
+  top: -75px;
+  animation-duration: 5s;
+  animation-name: rotatingSun;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.sun:hover {
+  cursor: pointer;
+}
+
+@keyframes rotatingSun {
+  from {
+    transform: rotate(180deg);
+  }
+
+  to {
+    transform: rotate(290deg);
+    transform: translateY(50px);
+  }
+}
+
+.moon {
+  font-size: 2rem;
+  color: rgba(101, 196, 224, 0.932);
+  animation-duration: 5s;
+  animation-name: rotatingSun;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.moon:hover {
+  cursor: pointer;
+}
