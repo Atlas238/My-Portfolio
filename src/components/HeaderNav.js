@@ -7,11 +7,19 @@ export default function HeaderNav({ theme }) {
 
   return (
     <div className={`navbar ${theme}`}>
-      <div className="brand">
-        <Icon icon="mug-hot" />
-        <h1>Jack Ryan Bentsen</h1>
+      <div className={`brand ${theme}`}>
+        {theme === "light" ? <Icon icon="mug-hot" /> : <Icon icon="star" />}
+        <h1>
+          <a href="#home">Jack Ryan Bentsen</a>
+        </h1>
       </div>
-      <div className="navlinks"></div>
+      <div className={`navlinks ${theme}`}>
+        <ul>
+          <li>
+            <a href="#work">My Work</a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
