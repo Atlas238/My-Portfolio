@@ -1,31 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio-one/static/css/main.3d8450da.chunk.css",
-    "main.js": "/portfolio-one/static/js/main.03f4aeb1.chunk.js",
-    "main.js.map": "/portfolio-one/static/js/main.03f4aeb1.chunk.js.map",
+    "main.css": "/portfolio-one/static/css/main.0f220336.chunk.css",
+    "main.js": "/portfolio-one/static/js/main.2bc5106c.chunk.js",
+    "main.js.map": "/portfolio-one/static/js/main.2bc5106c.chunk.js.map",
     "runtime-main.js": "/portfolio-one/static/js/runtime-main.1d8ba3c3.js",
     "runtime-main.js.map": "/portfolio-one/static/js/runtime-main.1d8ba3c3.js.map",
-    "static/js/2.e73a5abf.chunk.js": "/portfolio-one/static/js/2.e73a5abf.chunk.js",
-    "static/js/2.e73a5abf.chunk.js.map": "/portfolio-one/static/js/2.e73a5abf.chunk.js.map",
+    "static/js/2.ed41e9a0.chunk.js": "/portfolio-one/static/js/2.ed41e9a0.chunk.js",
+    "static/js/2.ed41e9a0.chunk.js.map": "/portfolio-one/static/js/2.ed41e9a0.chunk.js.map",
     "index.html": "/portfolio-one/index.html",
-    "static/css/main.3d8450da.chunk.css.map": "/portfolio-one/static/css/main.3d8450da.chunk.css.map",
-    "static/js/2.e73a5abf.chunk.js.LICENSE.txt": "/portfolio-one/static/js/2.e73a5abf.chunk.js.LICENSE.txt",
+    "static/css/main.0f220336.chunk.css.map": "/portfolio-one/static/css/main.0f220336.chunk.css.map",
+    "static/js/2.ed41e9a0.chunk.js.LICENSE.txt": "/portfolio-one/static/js/2.ed41e9a0.chunk.js.LICENSE.txt",
     "static/media/BentsenJackResume.39df7ef0.pdf": "/portfolio-one/static/media/BentsenJackResume.39df7ef0.pdf",
+    "static/media/style.css": "/portfolio-one/static/media/work-footer-light.e67ff22b.svg",
     "static/media/battle-brands-petpage.ae961cb5.PNG": "/portfolio-one/static/media/battle-brands-petpage.ae961cb5.PNG",
     "static/media/cal-replacer.d60f4063.PNG": "/portfolio-one/static/media/cal-replacer.d60f4063.PNG",
-    "static/media/icons8-css3.98aecc32.svg": "/portfolio-one/static/media/icons8-css3.98aecc32.svg",
-    "static/media/icons8-html-5.6d60dcad.svg": "/portfolio-one/static/media/icons8-html-5.6d60dcad.svg",
-    "static/media/icons8-javascript.334d8dc9.svg": "/portfolio-one/static/media/icons8-javascript.334d8dc9.svg",
-    "static/media/icons8-jquery.3b2689f6.svg": "/portfolio-one/static/media/icons8-jquery.3b2689f6.svg",
-    "static/media/icons8-npm.1050766c.svg": "/portfolio-one/static/media/icons8-npm.1050766c.svg",
-    "static/media/icons8-react.2064d9f4.svg": "/portfolio-one/static/media/icons8-react.2064d9f4.svg",
     "static/media/me.170ba09f.jpeg": "/portfolio-one/static/media/me.170ba09f.jpeg",
     "static/media/weather-dashboard-portfolio-feature.b188dd5d.PNG": "/portfolio-one/static/media/weather-dashboard-portfolio-feature.b188dd5d.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.1d8ba3c3.js",
-    "static/js/2.e73a5abf.chunk.js",
-    "static/css/main.3d8450da.chunk.css",
-    "static/js/main.03f4aeb1.chunk.js"
+    "static/js/2.ed41e9a0.chunk.js",
+    "static/css/main.0f220336.chunk.css",
+    "static/js/main.2bc5106c.chunk.js"
   ]
 }
