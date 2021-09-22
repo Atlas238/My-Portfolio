@@ -137,9 +137,69 @@ export default function About({ theme, setTheme }) {
             </button>
           </div>
           <Timeline theme={theme} page={page} setPage={setPage} />
+          {theme === "light" ? (
+            <p
+              style={{
+                position: "absolute",
+                top: "95%",
+                right: "40%",
+                display: "flex",
+                justifyContent: "center",
+                fontSize: "3rem",
+              }}
+            >
+              <a
+                style={{ padding: "1rem", color: "black" }}
+                href="https://www.github.com/Atlas238"
+              >
+                <Icon icon={["fab", "github"]} />
+              </a>
+              <a
+                style={{ padding: "1rem", color: "black" }}
+                href="https://www.linkedin.com/in/jack-bentsen"
+              >
+                <Icon icon={["fab", "linkedin"]} />
+              </a>
+              <a
+                style={{ padding: "1rem", color: "black" }}
+                href="https://www.facebook.com/Ahtlus"
+              >
+                <Icon icon={["fab", "facebook"]} />
+              </a>
+            </p>
+          ) : (
+            <p
+              style={{
+                position: "absolute",
+                top: "95%",
+                right: "40%",
+                display: "flex",
+                justifyContent: "center",
+                fontSize: "3rem",
+              }}
+            >
+              <a
+                style={{ padding: "1rem", color: "white" }}
+                href="https://www.github.com/Atlas238"
+              >
+                <Icon icon={["fab", "github"]} />
+              </a>
+              <a
+                style={{ padding: "1rem", color: "white" }}
+                href="https://www.linkedin.com/in/jack-bentsen"
+              >
+                <Icon icon={["fab", "linkedin"]} />
+              </a>
+              <a
+                style={{ padding: "1rem", color: "white" }}
+                href="https://www.facebook.com/Ahtlus"
+              >
+                <Icon icon={["fab", "facebook"]} />
+              </a>
+            </p>
+          )}
         </div>
       </div>
-      <Footer theme={theme} />
     </>
   );
 }
