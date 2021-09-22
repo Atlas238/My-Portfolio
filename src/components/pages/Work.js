@@ -104,7 +104,67 @@ export default function Work({ theme }) {
           );
         })}
       </div>
-      <div className={`work-footer ${theme}`}></div>
+      <div className={`work-footer ${theme}`}>
+        {theme === "light" ? (
+          <p
+            style={{
+              position: "relative",
+              top: "75%",
+              display: "flex",
+              justifyContent: "center",
+              fontSize: "3rem",
+            }}
+          >
+            <a
+              style={{ padding: "1rem", color: "black" }}
+              href="https://www.github.com/Atlas238"
+            >
+              <Icon icon={["fab", "github"]} />
+            </a>
+            <a
+              style={{ padding: "1rem", color: "black" }}
+              href="https://www.linkedin.com/in/jack-bentsen"
+            >
+              <Icon icon={["fab", "linkedin"]} />
+            </a>
+            <a
+              style={{ padding: "1rem", color: "black" }}
+              href="https://www.facebook.com/Ahtlus"
+            >
+              <Icon icon={["fab", "facebook"]} />
+            </a>
+          </p>
+        ) : (
+          <p
+            style={{
+              position: "relative",
+              top: "75%",
+              display: "flex",
+              justifyContent: "center",
+              fontSize: "3rem",
+            }}
+          >
+            <a
+              style={{ padding: "1rem", color: "white" }}
+              href="https://www.github.com/Atlas238"
+            >
+              <Icon icon={["fab", "github"]} />
+            </a>
+            <a
+              style={{ padding: "1rem", color: "white" }}
+              href="https://www.linkedin.com/in/jack-bentsen"
+            >
+              <Icon icon={["fab", "linkedin"]} />
+            </a>
+            <a
+              style={{ padding: "1rem", color: "white" }}
+              href="https://www.facebook.com/Ahtlus"
+            >
+              <Icon icon={["fab", "facebook"]} />
+            </a>
+          </p>
+        )}
+      </div>
     </div>
   );
 }

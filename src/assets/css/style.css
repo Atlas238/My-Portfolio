@@ -181,7 +181,7 @@ section {
   /* Horizontal Center */
   align-items: center;
   justify-content: space-between;
-  background-color: var(--c-background-light);
+  background-color: #6fd9fe;
   color: black;
 }
 .navbar.dark {
@@ -190,7 +190,7 @@ section {
   /* Horizontal Center */
   align-items: center;
   justify-content: space-between;
-  background-color: var(--c-background-dark);
+  background-color: #041219;
 }
 
 .navbar.dark div div {
@@ -238,7 +238,7 @@ section {
 }
 .navlinks ul li:hover a,
 .navlinks ul li:focus a {
-  color: #6fd9fe;
+  color: #fcfcfc;
 }
 
 .avatar {
@@ -470,6 +470,7 @@ section {
 
 .listitem.active button {
   color: #5ebad6 !important;
+  transform: scale(1.05);
 }
 
 .skill-underline {
@@ -1039,4 +1040,54 @@ section {
   opacity: 0.4;
   font-size: 0.7rem;
   height: 25px;
+}
+
+.skills-block.light ul li button:hover {
+  transform: scale(1.05);
+}
+.skills-block.dark ul li button:hover {
+  transform: scale(1.05);
+}
+
+.topbtn.dark {
+  text-decoration: none;
+  color: var(--t-dark);
+  z-index: 6;
+  position: absolute;
+  top: 45px;
+  right: 0;
+}
+.topbtn.light {
+  text-decoration: none;
+  color: var(--t-light);
+  z-index: 6;
+  position: absolute;
+  top: 45px;
+  right: 0;
+}
+
+.about-main {
+  padding-bottom: 250px;
+}
+
+.resumedownload.light {
+  color: var(--t-light);
+  margin-left: 30%;
+  font-size: 1.2rem;
+}
+.resumedownload.dark {
+  color: var(--t-dark);
+  margin-left: 30%;
+  font-size: 1.2rem;
+}
+
+.work-footer.dark p a:hover {
+  transition: transform 500ms ease;
+  transform: scale(1.05);
+  color: #26b4e7 !important;
+}
+.work-footer.light p a:hover {
+  transition: transform 500ms ease;
+  transform: scale(1.05);
+  color: #062468 !important;
 }

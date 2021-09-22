@@ -4,12 +4,13 @@ import ThemeToggle from "../fragments/ThemeToggle";
 import resume from "../../assets/pdf/BentsenJackResume.pdf";
 import Icon from "../fragments/Icon";
 import Timeline from "../fragments/Timeline";
+import Footer from "../Footer";
 
 export default function About({ theme, setTheme }) {
   const [page, setPage] = useState(0);
   return (
     <>
-      <div className={`about ${theme}`}>
+      <div id="top" className={`about ${theme}`}>
         <div className="about-theme-toggle">
           <ThemeToggle theme={theme} setTheme={setTheme} />
         </div>
@@ -96,13 +97,12 @@ export default function About({ theme, setTheme }) {
               technoloy takes us.
             </p>
           </div>
-        </div>
-        <div className="resumedownload">
           <a
             download="BentsenJack-Resume"
             href={resume}
             target="_blank"
             rel="noreferrer"
+            className={`resumedownload ${theme}`}
           >
             My full resume can be downloaded here!
           </a>
@@ -127,7 +127,7 @@ export default function About({ theme, setTheme }) {
             <button
               className="about-timeline-control-btn"
               onClick={() => {
-                if (page < 3) {
+                if (page < 2) {
                   let val = page + 1;
                   setPage(val);
                 }
@@ -136,9 +136,10 @@ export default function About({ theme, setTheme }) {
               <Icon icon={"chevron-down"} />
             </button>
           </div>
-          <Timeline theme={theme} page={page} />
+          <Timeline theme={theme} page={page} setPage={setPage} />
         </div>
       </div>
+      <Footer theme={theme} />
     </>
   );
 }

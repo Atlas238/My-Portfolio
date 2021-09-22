@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
+import useOnScreen from "./Observer";
 import PagesDot from "./PagesDot";
 
 import TimelineCard from "./TimelineCard";
@@ -55,40 +56,26 @@ const pageTwo = [
     },
   },
 ];
-const pageThree = [
-  {
-    title: "Eastside Research Associates - Research Assistant",
-    desc: "Facilitated multiple covid focused studies being ran through Evergreen Hospital",
-    dates: {
-      start: "3/2020",
-      end: "5/2020",
-    },
-  },
-  {
-    title: "test",
-    desc: "test",
-    dates: {
-      start: "0/0/0000",
-      end: "0/0/0000",
-    },
-  },
-  {
-    title: "test",
-    desc: "test",
-    dates: {
-      start: "0/0/0000",
-      end: "0/0/0000",
-    },
-  },
-];
 
-export default function Timeline({ theme, page }) {
+export default function Timeline({ theme, page, setPage }) {
+  const ref = useRef();
+  const isVisible = useOnScreen(ref);
+
+  useEffect(() => {
+    if (page === 0 && isVisible) {
+      setPage(1);
+    }
+  }, [isVisible]);
+
   return (
     <div className={`timeline-container ${theme}`}>
       <h5 id={"timeline"}>My Timeline</h5>
+      <a href="#top" className={`topbtn ${theme}`}>
+        To Top
+      </a>
       <div className={`timeline-featured ${theme}`}>
         <PagesDot page={page} />
-        <div className="timeline-featured-cards">
+        <div ref={ref} className="timeline-featured-cards">
           {page === 1 ? (
             <div className={`year-active`}>
               <TimelineCard theme={theme} timelineItem={pageOne[0]} num={0} />
@@ -186,67 +173,6 @@ export default function Timeline({ theme, page }) {
               <TimelineCard theme={theme} timelineItem={pageTwo[0]} num={0} />
               <TimelineCard theme={theme} timelineItem={pageTwo[1]} num={1} />
               <TimelineCard theme={theme} timelineItem={pageTwo[2]} num={2} />
-              <svg
-                className="squiqly-1"
-                height={500}
-                width={500}
-                strokeWidth={5}
-                fillOpacity={0}
-              >
-                <path
-                  d={"m 0 0 c 180 100 -40 140 160 240"}
-                  stroke={theme === "light" ? "black" : "whitesmoke"}
-                />
-              </svg>
-              <svg
-                className="squiqly-2"
-                height={500}
-                width={500}
-                strokeWidth={5}
-                fillOpacity={0}
-              >
-                <path
-                  d={"m 160 15 c -60 30 -40 220 -150 230"}
-                  stroke={theme === "light" ? "black" : "whitesmoke"}
-                />
-              </svg>
-            </div>
-          )}
-          {page === 3 ? (
-            <div className={`year-active`}>
-              <TimelineCard theme={theme} timelineItem={pageThree[0]} num={0} />
-              <TimelineCard theme={theme} timelineItem={pageThree[1]} num={1} />
-              <TimelineCard theme={theme} timelineItem={pageThree[2]} num={2} />
-              <svg
-                className="squiqly-1"
-                height={500}
-                width={500}
-                strokeWidth={5}
-                fillOpacity={0}
-              >
-                <path
-                  d={"m 0 0 c 180 100 -40 140 160 240"}
-                  stroke={theme === "light" ? "black" : "whitesmoke"}
-                />
-              </svg>
-              <svg
-                className="squiqly-2"
-                height={500}
-                width={500}
-                strokeWidth={5}
-                fillOpacity={0}
-              >
-                <path
-                  d={"m 160 15 c -60 30 -40 220 -150 230"}
-                  stroke={theme === "light" ? "black" : "whitesmoke"}
-                />
-              </svg>
-            </div>
-          ) : (
-            <div className={`year-inactive`}>
-              <TimelineCard theme={theme} timelineItem={pageThree[0]} num={0} />
-              <TimelineCard theme={theme} timelineItem={pageThree[1]} num={1} />
-              <TimelineCard theme={theme} timelineItem={pageThree[2]} num={2} />
               <svg
                 className="squiqly-1"
                 height={500}

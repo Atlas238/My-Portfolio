@@ -8,7 +8,6 @@ export default function PagesDot({ page }) {
         <div className="dots">
           <FontAwesomeIcon icon={["fas", "circle"]} />
           <FontAwesomeIcon icon={["fas", "circle"]} />
-          <FontAwesomeIcon icon={["fas", "circle"]} />
         </div>
       ) : page === 1 ? (
         <div className="dots">
@@ -17,20 +16,9 @@ export default function PagesDot({ page }) {
             style={{ opacity: 1, fontSize: "1rem" }}
           />
           <FontAwesomeIcon icon={["fas", "circle"]} />
-          <FontAwesomeIcon icon={["fas", "circle"]} />
         </div>
       ) : page === 2 ? (
         <div className="dots">
-          <FontAwesomeIcon icon={["fas", "circle"]} />
-          <FontAwesomeIcon
-            icon={["fas", "circle"]}
-            style={{ opacity: 1, fontSize: "1rem" }}
-          />
-          <FontAwesomeIcon icon={["fas", "circle"]} />
-        </div>
-      ) : page === 3 ? (
-        <div className="dots">
-          <FontAwesomeIcon icon={["fas", "circle"]} />
           <FontAwesomeIcon icon={["fas", "circle"]} />
           <FontAwesomeIcon
             icon={["fas", "circle"]}
