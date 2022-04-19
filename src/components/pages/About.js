@@ -97,15 +97,6 @@ export default function About({ theme, setTheme }) {
               technoloy takes us.
             </p>
           </div>
-          <a
-            download="BentsenJack-Resume"
-            href={resume}
-            target="_blank"
-            rel="noreferrer"
-            className={`resumedownload ${theme}`}
-          >
-            My full resume can be downloaded here!
-          </a>
         </div>
       </div>
       <div className={`about-timeline ${theme}`}>
